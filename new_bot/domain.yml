@@ -35,11 +35,11 @@ templates:
   utter_introduce_self:
   - text: "Hi! I'm BlackDog. Nice to meet you. I am trained in Behavioural Psychology. I am good at analysing behavioral patterns and I offer recommendations for resources that help people improve their overall wellbeing. Are you interested in improving your emotional quotient?"
   - buttons:
-    - payload: /mood_great
+    - payload: Let's start already
       title: Yes, I am
-    - payload: /goodbye
+    - payload: No, I want to leave
       title: No, I came here for something else
-    - payload: /goodbye
+    - payload: Explain yourself
       title: I don't understand
 
   utter_explain_self:
@@ -53,121 +53,121 @@ templates:
   utter_understand_self:
   - text: "Great! Before we begin, I want you to know that whatever you share with me is private. For purpose of training, I will store some of your data, but no one will be able to tell whom the data belongs to. This is a strictly confidential place. Are you ok with that?" 
   - buttons:
-    - payload: /mood_great
+    - payload: Yes, I trust you won't share my information
       title: Yes, I am fine
-    - payload: /goodbye
+    - payload: No, I want to leave
       title: No, I don't want to continue
 
   utter_medication:
   - text: "Alright. Let's start. Sometimes a recent shift in behaviour could be because of side-effects of some medications or substances. Did you, in the last 1 month, consume one or more of - birth control pills, mood lifters, drugs, unchecked quantity of alcohol?" 
   - buttons:
-    - payload: /mood_great
+    - payload: Yes, medications
       title: Yes, I did
-    - payload: /goodbye
+    - payload: No medications
       title: No, I didn't consume any of those
 
   utter_vitamin:
   - text: "Do any of your reports in last one month suggest deficiency of one or more of - Vitamins, Calcium?" 
   - buttons:
-    - payload: /mood_great
+    - payload: Yes, deficiency
       title: Yes, I have some deficiency
-    - payload: /goodbye
+    - payload: No deficiency
       title: No, I am good
 
   utter_thyroid:
   - text: "Any thyroid concerns?" 
   - buttons:
-    - payload: /mood_great
+    - payload: More thyroid
       title: I have hyperthyroidism
-    - payload: /mood_great
+    - payload: Less thyroid
       title: I have hypothyroidism
-    - payload: /goodbye
+    - payload: No thyroid
       title: No, I am fine
 
   utter_sleep_hours:
   - text: "OK. Do you know that the circadian rhythm is the 24-hour cycle that tells our bodies when to sleep, rise, and eat—regulating many physiological processes. This internal body clock is affected by environmental cues, like sunlight and temperature, and determines whether one feels wide-awake and energized or tired and depleted at different times of the day. When circadian rhythms are disrupted, sleeping and eating patterns can run amok. Let's see if your circadian rhythm is functioning well. How many hours a day do you sleep?" 
   - buttons:
-    - payload: /mood_great
+    - payload: less than 6 hours sleep
       title: Less than 6 hours
-    - payload: /mood_great
+    - payload: Between 6 and 9 hours sleep
       title: Between 6 and 9 hours
-    - payload: /goodbye
+    - payload: More than 9 hours sleep
       title: More than 9 hours
 
   utter_sleep_frequency:
   - text: "And is your sleep -" 
   - buttons:
-    - payload: /mood_great
+    - payload: one stretch sleep
       title: Regular - once a day, with a nap in between
-    - payload: /mood_great
+    - payload: broken sleep
       title: Irregular - multiple times a day, broken sleep
 
   utter_eating_habit:
   - text: "Gotcha. The positive effects of healthy food on mind are well known. I promise this is not to take you on a guilt trip. Let's just observe and track your eating habits :) If you were to assign percentage to healthy vs unhealthy food in your daily diet - which of the following apply to you? (no judging)" 
   - buttons:
-    - payload: /mood_great
-      title: Majority healthy, minority unhealthy
-    - payload: /mood_great
+    - payload: majority healthy
+      title: Majority healthy
+    - payload: equal healthy and unhealthy
       title: Equal healthy and unhealthy
-    - payload: /mood_great
-      title: Majority unhealthy, minority healthy
-    - payload: /mood_great
+    - payload: majority unhealthy
+      title: Majority unhealthy
+    - payload: no unhealthy at all
       title: Strictly no unhealthy
 
   utter_exercise_habit:
   - text: "Thanks for patiently answering me. I just have a few more questions and something useful awaits you at the end - I mean it. So, how often do you do a physical exercise?" 
   - buttons:
-    - payload: /mood_great
+    - payload: Regularly exercise
       title: Regularly
-    - payload: /mood_great
+    - payload: Irregularly exercise
       title: Irregularly
-    - payload: /mood_great
+    - payload: Lethargic, no exercise
       title: TBH, I feel lethargic, I don't exercise much
  
   utter_intellectual_habit:
   - text: "Do you engage in any intellectual activity, besides your work? It doesn't have to be intellectually heavy, just so long as it is intellectually stimulating." 
   - buttons:
-    - payload: /mood_great
+    - payload: Yes, engage in intellectual activity
       title: Yes, I try
-    - payload: /mood_great
+    - payload: No time for intellectual activity
       title: No, work and family takes most of my time
   
   utter_others_behaviour:
   - text: "I see. Is there a specific behaviour in others that annoys or irritates you a lot?" 
   - buttons:
-    - payload: /mood_great
+    - payload: Yes, people irritate me
       title: Yes, few people just know how to irritate me
-    - payload: /mood_great
+    - payload: No, I'm a stoic
       title: No, I don't let anyone affect me
-    - payload: /mood_great
+    - payload: People irritate me sometimes
       title: Ummm...there are times, but mostly I don't get affected for too long
 
 
   utter_past_vs_future:
   - text: "When you are feeling anxious, does your anxiety generally lead you to -" 
   - buttons:
-    - payload: /mood_great
+    - payload: Thinking about past
       title: Thinking about past
-    - payload: /mood_great
+    - payload: Worrying about future
       title: Worrying about future
   
 
   utter_loved_ones:
   - text: "How frequently do you speak to your loved ones?" 
   - buttons:
-    - payload: /mood_great
+    - payload: Talk to loved ones daily
       title: Daily
-    - payload: /mood_great
+    - payload: Talk to loved ones weekly
       title: Weekly
-    - payload: /mood_great
+    - payload: Talk to loved ones rarely
       title: Rarely
 
   utter_loved_ones:
   - text: "When you are talking to your loved ones, do you feel irritated often?" 
   - buttons:
-    - payload: /mood_great
+    - payload: Get irritated while talking to loved ones
       title: Yes!
-    - payload: /mood_great
+    - payload: Feel good talking to loved ones
       title: No, I feel really good 
     
   utter_report_consolidation:
