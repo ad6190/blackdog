@@ -1,0 +1,96 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_introduce_self
+- 
+
+templates:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_introduce_self:
+  - text: "Hi! I'm BlackDog. Nice to meet you. I am trained in Behavioural Psychology. I am good at analysing behavioral patterns and I offer recommendations for resources that help people improve their overall wellbeing. Are you interested in improving your emotional quotient?"
+  - buttons:
+    - payload: /mood_great
+      title: Yes, I am
+    - payload: /goodbye
+      title: No, I came here for something else
+    - payload: /goodbye
+      title: I don't understand
+
+  utter_explain_self:
+  - text: "OK. Let me explain. According to behavioural psychology, by discovering and studying patterns in our actions and behaviours, we can get to the root of - why we behave the way we do. So, if you're interested in understanding your behaviour, discovering negative patterns and knowing exactly what can improve your state of mind, I can help. I'm trained in behavioural psychology and co-created with experts, so you can trust me." 
+  - buttons:
+    - payload: /mood_great
+      title: Alright, I get it now
+    - payload: /goodbye
+      title: No, I came for something else
+
+  utter_understand_self:
+  - text: "Great! Before we begin, I want you to know that whatever you share with me is private. For purpose of training, I will store some of your data, but no one will be able to tell whom the data belongs to. This is a strictly confidential place. Are you ok with that?" 
+  - buttons:
+    - payload: /mood_great
+      title: Yes, I am fine
+    - payload: /goodbye
+      title: No, I don't want to continue
+
+  utter_medication:
+  - text: "Alright. Let's start. Sometimes a recent shift in behaviour could be because of side-effects of some medications or substances. Did you, in the last 1 month, consume one or more of - birth control pills, mood lifters, drugs, unchecked quantity of alcohol?" 
+  - buttons:
+    - payload: /mood_great
+      title: Yes, I did
+    - payload: /goodbye
+      title: No, I didn't consume any of those
+
+  utter_vitamin:
+  - text: "Do any of your reports in last one month suggest deficiency of one or more of - Vitamins, Calcium?" 
+  - buttons:
+    - payload: /mood_great
+      title: Yes, I have some deficiency
+    - payload: /goodbye
+      title: No, I am good
+
+  utter_thyroid:
+  - text: "Any thyroid concerns?" 
+  - buttons:
+    - payload: /mood_great
+      title: I have hyperthyroidism
+    - payload: /mood_great
+      title: I have hypothyroidism
+    - payload: /goodbye
+      title: No, I am fine
+
+  utter_sleep_hours:
+  - text: "OK. Do you know that the circadian rhythm is the 24-hour cycle that tells our bodies when to sleep, rise, and eat—regulating many physiological processes. This internal body clock is affected by environmental cues, like sunlight and temperature, and determines whether one feels wide-awake and energized or tired and depleted at different times of the day. When circadian rhythms are disrupted, sleeping and eating patterns can run amok. Let's see if your circadian rhythm is functioning well. How many hours a day do you sleep?" 
+  - buttons:
+    - payload: /mood_great
+      title: Less than 6 hours
+    - payload: /mood_great
+      title: Between 6 and 9 hours
+    - payload: /goodbye
+      title: More than 9 hours
+
