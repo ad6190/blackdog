@@ -128,11 +128,49 @@ templates:
   - text: "Do you engage in any intellectual activity, besides your work? It doesn't have to be intellectually heavy, just so long as it is intellectually stimulating." 
   - buttons:
     - payload: /mood_great
-      title: Regularly
+      title: Yes, I try
     - payload: /mood_great
-      title: Irregularly
+      title: No, work and family takes most of my time
+  
+  utter_others_behaviour:
+  - text: "I see. Is there a specific behaviour in others that annoys or irritates you a lot?" 
+  - buttons:
     - payload: /mood_great
-      title: TBH, I feel lethargic, I don't exercise much
- 
+      title: Yes, few people just know how to irritate me
+    - payload: /mood_great
+      title: No, I don't let anyone affect me
+    - payload: /mood_great
+      title: Ummm...there are times, but mostly I don't get affected for too long
 
+
+  utter_past_vs_future:
+  - text: "When you are feeling anxious, does your anxiety generally lead you to -" 
+  - buttons:
+    - payload: /mood_great
+      title: Thinking about past
+    - payload: /mood_great
+      title: Worrying about future
+  
+
+  utter_loved_ones:
+  - text: "How frequently do you speak to your loved ones?" 
+  - buttons:
+    - payload: /mood_great
+      title: Daily
+    - payload: /mood_great
+      title: Weekly
+    - payload: /mood_great
+      title: Rarely
+
+  utter_loved_ones:
+  - text: "When you are talking to your loved ones, do you feel irritated often?" 
+  - buttons:
+    - payload: /mood_great
+      title: Yes!
+    - payload: /mood_great
+      title: No, I feel really good 
+    
+  utter_report_consolidation:
+  - text: "Alright. You've been a sport! This was just a demo for you to see how we'll engage in future. I will be far more personalised and we'll look much deeper into your thought patterns - without asking all questions at once like here :) It's a process to work on ones behaviour and improve it, right? Let me consolidate a list of recommendations for you. As I am still learning, I do this in collaboration with experts. Kindly share your email id and I will send you a report with recommendations, soon." 
+  
     
