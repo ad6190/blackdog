@@ -1,27 +1,35 @@
-## happy path
-* greet
-  - utter_greet
-* mood_great
-  - utter_happy
-
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* affirm
-  - utter_happy
-
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
-
-## say goodbye
-* goodbye
-  - utter_goodbye
+## introduce
+* introduce_self
+  - utter_introduce_self
+* want_to_leave
+  - utter_want_to_leave
+* explain_self
+  - utter_explain_self
+* understand_self
+  - utter_understand_self
+* check_secure
+  - utter_sleep_hours
+* sleep_hours
+  - utter_sleep_frequency
+* sleep_frequency
+  - utter_eating_habit
+* eating_habit
+  - utter_medication
+* medication
+  - utter_vitamin
+* vitamin
+  - utter_thyroid
+* thyroid
+  - utter_exercise_habit
+* exercise_habit
+  - utter_intellectual_habit
+* intellectual_habit
+  - utter_others_behaviour
+* others_behaviour
+  - utter_past_vs_future
+* past_vs_future
+  - utter_loved_ones
+* loved_ones
+  - utter_loved_ones_irritated
+* loved_ones_irritated
+  - utter_report_consolidation
