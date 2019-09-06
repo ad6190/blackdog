@@ -1,4 +1,3 @@
-
 ## intent:introduce_self
 - hey
 - hello
@@ -21,6 +20,7 @@
 
 ## intent:check_secure
 - Yes, I trust you won't share my information
+- Yes, trust you 
 
 ## intent:sleep_hours
 - Less than 6 hours sleep
@@ -30,6 +30,17 @@
 ## intent:sleep_frequency
 - one stretch sleep
 - broken sleep
+
+## intent:eating_habit
+- majority healthy
+- majority unhealthy
+- equal healthy and unhealthy
+- no unhealthy at all
+
+## intent:exercise_habit
+- Regularly exercise
+- Irregularly exercise
+- Lethargic, no exercise
 
 ## intent:medication
 - Yes, medications
@@ -43,17 +54,6 @@
 - More thyroid
 - Less thyroid
 - No thyroid problem
-
-## intent:eating_habit
-- majority healthy
-- majority unhealthy
-- equal healthy and unhealthy
-- no unhealthy at all
-
-## intent:exercise_habit
-- Regularly exercise
-- Irregularly exercise
-- Lethargic, no exercise
 
 ## intent:intellectual_habit
 - Yes, engage in intellectual activity

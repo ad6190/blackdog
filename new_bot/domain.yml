@@ -1,46 +1,23 @@
 intents:
-  - introduce_self
-  - want_to_leave
-  - explain_self
-  - understand_self
-  - check_secure
-  - medication
-  - vitamin
-  - thyroid
-  - sleep_hours
-  - sleep_frequency
-  - eating_habit
-  - exercise_habit
-  - intellectual_habit
-  - others_behaviour
-  - past_vs_future
-  - loved_ones
-  - loved_ones_irritated
-  - report_consolidation
-
-actions:
-  - utter_introduce_self
-  - utter_explain_self
-  - utter_understand_self
-  - utter_medication
-  - utter_vitamin
-  - utter_thyroid
-  - utter_sleep_hours
-  - utter_sleep_frequency
-  - utter_eating_habit
-  - utter_exercise_habit
-  - utter_intellectual_habit
-  - utter_others_behaviour
-  - utter_past_vs_future
-  - utter_loved_ones
-  - utter_loved_ones_irritated
-  - utter_report_consolidation
-  - utter_want_to_leave
-
+- introduce_self
+- want_to_leave
+- explain_self
+- understand_self
+- check_secure
+- medication
+- vitamin
+- thyroid
+- sleep_hours
+- sleep_frequency
+- eating_habit
+- exercise_habit
+- intellectual_habit
+- others_behaviour
+- past_vs_future
+- loved_ones
+- loved_ones_irritated
 templates:
-
   utter_introduce_self:
-  - text: "Woof woof! I'm Goofy from BlackDog Wellness. Nice to meet you. I am a super-dog trained in Behavioural Psychology. I am good at analysing behavioral patterns and I offer recommendations for resources that help people improve their overall wellbeing. Are you interested in improving your emotional quotient?"
   - buttons:
     - payload: Let's start already
       title: Yes, I am
@@ -48,28 +25,35 @@ templates:
       title: No, I came here for something else
     - payload: Explain yourself
       title: I don't understand
-
+    text: Woof woof! I'm Goofy from BlackDog Wellness. Nice to meet you. I am a super-dog
+      trained in Behavioural Psychology. I am good at analysing behavioral patterns
+      and I offer recommendations for resources that help people improve their overall
+      wellbeing. Are you interested in improving your emotional quotient?
   utter_want_to_leave:
-  - text: "OK. If you change your mind, I am right here." 
-  
+  - text: OK. If you change your mind, I am right here.
   utter_explain_self:
-  - text: "OK. Let me explain. According to behavioural psychology, by discovering and studying patterns in our actions and behaviours, we can get to the root of - why we behave the way we do. So, if you're interested in understanding your behaviour, discovering negative patterns and knowing exactly what can improve your state of mind, I can help. I'm trained in behavioural psychology and co-created with experts, so you can trust me." 
   - buttons:
     - payload: Yes, I understand you now
       title: Alright, I get it now
     - payload: No, I want to leave
       title: No, I came for something else
-
+    text: OK. Let me explain. According to behavioural psychology, by discovering
+      and studying patterns in our actions and behaviours, we can get to the root
+      of - why we behave the way we do. So, if you're interested in understanding
+      your behaviour, discovering negative patterns and knowing exactly what can improve
+      your state of mind, I can help. I'm trained in behavioural psychology and co-created
+      with experts, so you can trust me.
   utter_understand_self:
-  - text: "Great! Before we begin, I want you to know that whatever you share with me is private. For purpose of training, I will store some of your data, but no one will be able to tell whom the data belongs to. This is a strictly confidential place. Are you ok with that?" 
   - buttons:
     - payload: Yes, I trust you won't share my information
       title: Yes, I am fine
     - payload: No, I want to leave
       title: No, I don't want to continue
-
+    text: Great! Before we begin, I want you to know that whatever you share with
+      me is private. For purpose of training, I will store some of your data, but
+      no one will be able to tell whom the data belongs to. This is a strictly confidential
+      place. Are you ok with that?
   utter_sleep_hours:
-  - text: "Great. Do you know that the circadian rhythm is the 24-hour cycle that tells our bodies when to sleep, rise, and eat—regulating many physiological processes. This internal body clock is affected by environmental cues, like sunlight and temperature, and determines whether one feels wide-awake and energized or tired and depleted at different times of the day. When circadian rhythms are disrupted, sleeping and eating patterns can run amok. Let's see if your circadian rhythm is functioning well. How many hours a day do you sleep?" 
   - buttons:
     - payload: Less than 6 hours sleep
       title: Less than 6 hours
@@ -77,17 +61,21 @@ templates:
       title: Between 6 and 9 hours
     - payload: More than 9 hours sleep
       title: More than 9 hours
-
+    text: Great. Do you know that the circadian rhythm is the 24-hour cycle that tells
+      our bodies when to sleep, rise, and eat—regulating many physiological processes.
+      This internal body clock is affected by environmental cues, like sunlight and
+      temperature, and determines whether one feels wide-awake and energized or tired
+      and depleted at different times of the day. When circadian rhythms are disrupted,
+      sleeping and eating patterns can run amok. Let's see if your circadian rhythm
+      is functioning well. How many hours a day do you sleep?
   utter_sleep_frequency:
-  - text: "And is your sleep -" 
   - buttons:
     - payload: one stretch sleep
       title: Regular - once a day, with a nap in between
     - payload: broken sleep
       title: Irregular - multiple times a day, broken sleep
-
+    text: And is your sleep -
   utter_eating_habit:
-  - text: "Gotcha. The positive effects of healthy food on mind are well known. I promise this is not to take you on a guilt trip. Let's just observe and track your eating habits :) If you were to assign percentage to healthy vs unhealthy food in your daily diet - which of the following apply to you? (no judging)" 
   - buttons:
     - payload: majority healthy
       title: Majority healthy
@@ -97,25 +85,28 @@ templates:
       title: Majority unhealthy
     - payload: no unhealthy at all
       title: Strictly no unhealthy
-
+    text: Gotcha. The positive effects of healthy food on mind are well known. I promise
+      this is not to take you on a guilt trip. Let's just observe and track your eating
+      habits :) If you were to assign percentage to healthy vs unhealthy food in your
+      daily diet - which of the following apply to you? (no judging)
   utter_medication:
-  - text: "Sometimes a recent shift in behaviour could be because of side-effects of some medications or substances. Did you, in the last 1 month, consume one or more of - birth control pills, mood lifters, drugs, unchecked quantity of alcohol?" 
   - buttons:
     - payload: Yes, medications
       title: Yes, I did
     - payload: No medications
       title: No, I didn't consume any of those
-
+    text: Sometimes a recent shift in behaviour could be because of side-effects of
+      some medications or substances. Did you, in the last 1 month, consume one or
+      more of - birth control pills, mood lifters, drugs, unchecked quantity of alcohol?
   utter_vitamin:
-  - text: "Do any of your reports in last one month suggest deficiency of one or more of - Vitamins, Calcium?" 
   - buttons:
     - payload: Yes, deficiency
       title: Yes, I have some deficiency
     - payload: No deficiency
       title: No, I am good
-
+    text: Do any of your reports in last one month suggest deficiency of one or more
+      of - Vitamins, Calcium?
   utter_thyroid:
-  - text: "Any thyroid concerns?" 
   - buttons:
     - payload: More thyroid
       title: I have hyperthyroidism
@@ -123,9 +114,8 @@ templates:
       title: I have hypothyroidism
     - payload: No thyroid problem
       title: No, I am fine
-
+    text: Any thyroid concerns?
   utter_exercise_habit:
-  - text: "Thanks for patiently answering me. I just have a few more questions and something useful awaits you at the end - I mean it. So, how often do you do a physical exercise?" 
   - buttons:
     - payload: Regularly exercise
       title: Regularly
@@ -133,17 +123,18 @@ templates:
       title: Irregularly
     - payload: Lethargic, no exercise
       title: TBH, I feel lethargic, I don't exercise much
- 
+    text: Thanks for patiently answering me. I just have a few more questions and
+      something useful awaits you at the end - I mean it. So, how often do you do
+      a physical exercise?
   utter_intellectual_habit:
-  - text: "Do you engage in any intellectual activity, besides your work? It doesn't have to be intellectually heavy, just so long as it is intellectually stimulating." 
   - buttons:
     - payload: Yes, engage in intellectual activity
       title: Yes, I try
     - payload: No time for intellectual activity
       title: No, work and family takes most of my time
-  
+    text: Do you engage in any intellectual activity, besides your work? It doesn't
+      have to be intellectually heavy, just so long as it is intellectually stimulating.
   utter_others_behaviour:
-  - text: "I see. Is there a specific behaviour in others that annoys or irritates you a lot?" 
   - buttons:
     - payload: Yes, people irritate me
       title: Yes, few people just know how to irritate me
@@ -151,17 +142,16 @@ templates:
       title: No, I don't let anyone affect me
     - payload: People irritate me sometimes
       title: Ummm...there are times, but mostly I don't get affected for too long
-
+    text: I see. Is there a specific behaviour in others that annoys or irritates
+      you a lot?
   utter_past_vs_future:
-  - text: "When you are feeling anxious, does your anxiety generally lead you to -" 
   - buttons:
     - payload: Thinking about past
       title: Thinking about past
     - payload: Worrying about future
       title: Worrying about future
-  
+    text: When you are feeling anxious, does your anxiety generally lead you to -
   utter_loved_ones:
-  - text: "How frequently do you speak to your loved ones?" 
   - buttons:
     - payload: Talk to loved ones daily
       title: Daily
@@ -169,16 +159,37 @@ templates:
       title: Weekly
     - payload: Talk to loved ones rarely
       title: Rarely
-
+    text: How frequently do you speak to your loved ones?
   utter_loved_ones_irritated:
-  - text: "When you are talking to your loved ones, do you feel irritated often?" 
   - buttons:
     - payload: Get irritated while talking to loved ones
       title: Yes!
     - payload: Feel good talking to loved ones
-      title: No, I feel really good 
-    
+      title: No, I feel really good
+    text: When you are talking to your loved ones, do you feel irritated often?
   utter_report_consolidation:
-  - text: "Alright. You've been a sport! This was just a demo for you to see how we'll engage in future. I will be far more personalised and we'll look much deeper into your thought patterns - without asking all questions at once like here :) It's a process to work on ones behaviour and improve it, right? Let me consolidate a list of recommendations for you. As I am still learning, I do this in collaboration with experts. Kindly share your email id and I will send you a report with recommendations, soon." 
-  
-    
+  - text: Alright. You've been a sport! This was just a demo for you to see how we'll
+      engage in future. I will be far more personalised and we'll look much deeper
+      into your thought patterns - without asking all questions at once like here
+      :) It's a process to work on ones behaviour and improve it, right? Let me consolidate
+      a list of recommendations for you. As I am still learning, I do this in collaboration
+      with experts. Kindly share your email id and I will send you a report with recommendations,
+      soon.
+actions:
+- utter_introduce_self
+- utter_explain_self
+- utter_understand_self
+- utter_medication
+- utter_vitamin
+- utter_thyroid
+- utter_sleep_hours
+- utter_sleep_frequency
+- utter_eating_habit
+- utter_exercise_habit
+- utter_intellectual_habit
+- utter_others_behaviour
+- utter_past_vs_future
+- utter_loved_ones
+- utter_loved_ones_irritated
+- utter_report_consolidation
+- utter_want_to_leave
