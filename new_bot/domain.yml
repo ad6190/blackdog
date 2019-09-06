@@ -94,3 +94,45 @@ templates:
     - payload: /goodbye
       title: More than 9 hours
 
+  utter_sleep_frequency:
+  - text: "And is your sleep -" 
+  - buttons:
+    - payload: /mood_great
+      title: Regular - once a day, with a nap in between
+    - payload: /mood_great
+      title: Irregular - multiple times a day, broken sleep
+
+  utter_eating_habit:
+  - text: "Gotcha. The positive effects of healthy food on mind are well known. I promise this is not to take you on a guilt trip. Let's just observe and track your eating habits :) If you were to assign percentage to healthy vs unhealthy food in your daily diet - which of the following apply to you? (no judging)" 
+  - buttons:
+    - payload: /mood_great
+      title: Majority healthy, minority unhealthy
+    - payload: /mood_great
+      title: Equal healthy and unhealthy
+    - payload: /mood_great
+      title: Majority unhealthy, minority healthy
+    - payload: /mood_great
+      title: Strictly no unhealthy
+
+  utter_exercise_habit:
+  - text: "Thanks for patiently answering me. I just have a few more questions and something useful awaits you at the end - I mean it. So, how often do you do a physical exercise?" 
+  - buttons:
+    - payload: /mood_great
+      title: Regularly
+    - payload: /mood_great
+      title: Irregularly
+    - payload: /mood_great
+      title: TBH, I feel lethargic, I don't exercise much
+ 
+  utter_intellectual_habit:
+  - text: "Do you engage in any intellectual activity, besides your work? It doesn't have to be intellectually heavy, just so long as it is intellectually stimulating." 
+  - buttons:
+    - payload: /mood_great
+      title: Regularly
+    - payload: /mood_great
+      title: Irregularly
+    - payload: /mood_great
+      title: TBH, I feel lethargic, I don't exercise much
+ 
+
+    
